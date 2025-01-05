@@ -47,8 +47,58 @@ function ges() {
         label.innerHTML = "+"
 
     } else {
-        label.innerHTML = "="
+        label.innerHTML = "= 🤑"
     }
 }
 
+//---------------------------------Array add Object / Object add Array---------------------
+
+let customers = [
+    {
+        name: "Nimal",
+        age: 12,
+        address: "Panadura"
+    },
+    12,
+    [
+        {
+            name: "Amal"
+        },
+        {
+            name: 'Kamal'
+        },
+        {
+            name: "Sunil"
+        }
+    ],
+    "Vimal",
+    {},
+    {},
+    {}
+]
+
+console.log(customers);
+
+//----------------Chatch name-----------
+
+//--- Step i -------------
+customers[2].forEach(obj => {
+    console.log(obj.name);
+
+});
+
+//---Step ii ------------
+customers[2].forEach(obj => {
+    console.log(obj['nam']);
+    // 'nam' = name
+
+});
+
+let isTrue = (5 == '5'); // double eqvals cheking varibal -value-
+
+let isTruel = (5 === '5'); // threbal eqvals cheking varibal -value- and -type- 
+
+console.log(isTrue); //true
+
+console.log(isTruel); //false
 
