@@ -18,11 +18,37 @@ class customer {
         this.name = name;
     }
 
-    getName(){
+    getName() {
         return this.name;
     }
 }
 
-let customer01 = new customer("Kamal",12,"Panadura");
+let customer01 = new customer("Kamal", 12, "Panadura");
 
 console.log(customer01.name);
+
+let randomNumber = Math.floor((Math.random() * 10) + 1);
+
+console.log(randomNumber);
+
+//-----------------------------------------GAME------------------------------
+
+function ges() {
+    let randomvalue = randomNumber;
+
+    let txtvalue = document.getElementById("textNumber").value
+
+    let label = document.getElementById("labelthis")
+
+    if (randomvalue < txtvalue) {
+        label.innerHTML = "-"
+
+    } else if (randomvalue > txtvalue) {
+        label.innerHTML = "+"
+
+    } else {
+        label.innerHTML = "="
+    }
+}
+
+
